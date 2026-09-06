@@ -737,3 +737,301 @@ body.high-contrast .evaluation-section {
 
 }
 
+/* =====================================================
+   GUIA DE SEGURANÇA DIGITAL
+===================================================== */
+
+.digital-guide {
+    margin-top: 30px;
+    background: white;
+    border: 1px solid #dbe5ee;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .06);
+}
+
+
+/* Cabeçalho do guia */
+
+.guide-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: linear-gradient(135deg, #075985, #0b5cab);
+    color: white;
+    padding: 25px;
+}
+
+.guide-icon {
+    font-size: 45px;
+}
+
+.guide-header h3 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.guide-header p {
+    color: #e0f2fe;
+}
+
+
+/* Itens */
+
+.guide-item {
+    display: flex;
+    gap: 18px;
+    padding: 25px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.guide-item:last-of-type {
+    border-bottom: none;
+}
+
+
+/* Número */
+
+.guide-number {
+    flex-shrink: 0;
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #dbeafe;
+    color: #075985;
+
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/* Títulos */
+
+.guide-item h4 {
+    color: #075985;
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+
+/* Texto */
+
+.guide-item p {
+    margin-bottom: 10px;
+    color: #455a64;
+}
+
+
+/* Listas */
+
+.guide-item ul,
+.guide-item ol {
+    padding-left: 22px;
+    margin-top: 10px;
+}
+
+.guide-item li {
+    margin-bottom: 7px;
+}
+
+
+/* Caixa de dica */
+
+.tip-box {
+    background: #eff6ff;
+    border-left: 5px solid #2563eb;
+    padding: 14px;
+    border-radius: 7px;
+    margin-top: 12px;
+}
+
+
+/* Caixa de alerta */
+
+.warning-box {
+    background: #fff7ed;
+    border-left: 5px solid #f59e0b;
+    padding: 14px;
+    border-radius: 7px;
+    margin-top: 12px;
+}
+
+
+/* Situação de golpe */
+
+.emergency-guide {
+    background: #fffafa;
+}
+
+
+/* Checklist */
+
+.checklist {
+    margin: 25px;
+    padding: 25px;
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 12px;
+}
+
+.checklist h3 {
+    color: #166534;
+    margin-bottom: 8px;
+}
+
+.checklist p {
+    margin-bottom: 15px;
+}
+
+.checklist label {
+    display: block;
+    margin: 12px 0;
+    cursor: pointer;
+}
+
+.checklist input {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+
+/* Frase final */
+
+.security-final {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin: 25px;
+    padding: 20px;
+
+    background: #eef2ff;
+    border-radius: 10px;
+
+    color: #312e81;
+}
+
+.security-final span {
+    font-size: 38px;
+}
+
+.security-final strong {
+    font-size: 19px;
+}
+
+.security-final p {
+    margin-top: 4px;
+}
+
+
+/* Fonte oficial */
+
+.official-source {
+    padding: 22px;
+    background: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+}
+
+.official-source p {
+    margin-bottom: 12px;
+    color: #475569;
+}
+
+.source-button {
+    display: inline-block;
+
+    background: #0b5cab;
+    color: white;
+
+    padding: 10px 16px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.source-button:hover {
+    background: #073b6b;
+}
+
+
+/* ================= ALTO CONTRASTE ================= */
+
+body.high-contrast .digital-guide,
+body.high-contrast .digital-guide * {
+    background-color: #000;
+    color: #fff;
+    border-color: #fff;
+}
+
+body.high-contrast .guide-header {
+    background: #000;
+}
+
+body.high-contrast .guide-number {
+    background: #000;
+    color: #ffff00;
+    border: 1px solid #ffff00;
+}
+
+body.high-contrast .tip-box,
+body.high-contrast .warning-box,
+body.high-contrast .checklist,
+body.high-contrast .security-final,
+body.high-contrast .official-source {
+    background: #000;
+    color: #fff;
+}
+
+body.high-contrast .source-button {
+    background: #ffff00;
+    color: #000;
+}
+
+
+/* ================= CELULAR ================= */
+
+@media (max-width: 600px) {
+
+    .guide-header {
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .guide-header h3 {
+        font-size: 20px;
+    }
+
+    .guide-item {
+        padding: 20px 17px;
+        gap: 12px;
+    }
+
+    .guide-number {
+        width: 32px;
+        height: 32px;
+        font-size: 15px;
+    }
+
+    .guide-item h4 {
+        font-size: 17px;
+    }
+
+    .checklist,
+    .security-final {
+        margin: 17px;
+    }
+
+}
+
