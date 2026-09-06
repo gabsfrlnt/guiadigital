@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Guia Digital - Inclusão e Cidadania</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+
+    <header>
+
+        <div class="container">
+
+            <div class="icone-header">💻</div>
+
+            <h1>Guia Digital</h1>
+
+            <p>
+                Inclusão, cidadania e segurança na internet
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+
+    <main class="container">
+
+
+        <!-- APRESENTAÇÃO -->
+
+        <section class="introducao">
+
+            <h2>👋 Bem-vindo!</h2>
+
+            <p>
+                Este guia foi desenvolvido para ajudar pessoas que desejam
+                utilizar a internet e os serviços digitais com mais facilidade,
+                segurança e autonomia.
+            </p>
+
+            <p>
+                Aqui você encontrará acesso a serviços públicos, oportunidades
+                de emprego, cursos gratuitos, informações de saúde e dicas
+                para navegar na internet com segurança.
+            </p>
+
+        </section>
+
+
+        <!-- COMO USAR -->
+
+        <section>
+
+            <h2>📖 Como utilizar este guia</h2>
+
+            <div class="passos">
+
+                <div class="passo">
+                    <span>1</span>
+                    <p>Escolha uma categoria abaixo.</p>
+                </div>
+
+                <div class="passo">
+                    <span>2</span>
+                    <p>Clique no botão do serviço desejado.</p>
+                </div>
+
+                <div class="passo">
+                    <span>3</span>
+                    <p>Confira se está acessando um site oficial.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SERVIÇOS -->
+
+        <section>
+
+            <h2>🌐 Serviços digitais</h2>
+
+            <div class="cards">
+
+
+                <!-- GOV -->
+
+                <div class="card">
+
+                    <div class="card-icon">🏛️</div>
+
+                    <h3>Gov.br</h3>
+
+                    <p>
+                        Acesse diversos serviços públicos digitais
+                        oferecidos pelo Governo Federal.
+                    </p>
+
+                    <a
+                        href="https://www.gov.br/"
+                        target="_blank"
+                        class="button">
+
+                        Acessar serviço
+
+                    </a>
+
+                </div>
+
+
+                <!-- CARTEIRA -->
+
+                <div class="card">
+
+                    <div class="card-icon">💼</div>
+
+                    <h3>Carteira de Trabalho Digital</h3>
+
+                    <p>
+                        Consulte informações relacionadas ao trabalho,
+                        contratos e benefícios.
+                    </p>
+
+                    <a
+                        href="https://www.gov.br/pt-br/temas/carteira-de-trabalho-digital"
+                        target="_blank"
+                        class="button">
+
+                        Acessar serviço
+
+                    </a>
+
+                </div>
+
+
+                <!-- SUS -->
+
+                <div class="card">
+
+                    <div class="card-icon">🏥</div>
+
+                    <h3>Meu SUS Digital</h3>
+
+                    <p>
+                        Consulte informações e serviços relacionados
+                        à saúde pública.
+                    </p>
+
+                    <a
+                        href="https://www.gov.br/saude/pt-br/composicao/seidigi/meu-sus-digital"
+                        target="_blank"
+                        class="button">
+
+                        Acessar serviço
+
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- EMPREGO -->
+
+        <section>
+
+            <h2>💼 Emprego e renda</h2>
+
+            <div class="cards">
+
+
+                <div class="card">
+
+                    <div class="card-icon">🔎</div>
+
+                    <h3>Portal Emprega Brasil</h3>
+
+                    <p>
+                        Encontre informações sobre emprego,
+                        trabalho e serviços relacionados.
+                    </p>
+
+                    <a
+                        href="https://empregabrasil.mte.gov.br/"
+                        target="_blank"
+                        class="button">
+
+                        Acessar
+
+                    </a>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="card-icon">📄</div>
+
+                    <h3>Qualificação profissional</h3>
+
+                    <p>
+                        Procure cursos e oportunidades para
+                        melhorar sua qualificação profissional.
+                    </p>
+
+                    <a
+                        href="https://www.gov.br/trabalho-e-emprego/"
+                        target="_blank"
+                        class="button">
+
+                        Conhecer
+
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- EDUCAÇÃO -->
+
+        <section>
+
+            <h2>📚 Educação e cursos gratuitos</h2>
+
+            <div class="cards">
+
+
+                <div class="card">
+
+                    <div class="card-icon">🎓</div>
+
+                    <h3>Escola Virtual</h3>
+
+                    <p>
+                        Plataforma com cursos gratuitos para
+                        desenvolvimento profissional e pessoal.
+                    </p>
+
+                    <a
+                        href="https://www.ev.org.br/"
+                        target="_blank"
+                        class="button">
+
+                        Ver cursos
+
+                    </a>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="card-icon">📖</div>
+
+                    <h3>Aprenda Mais</h3>
+
+                    <p>
+                        Plataforma do Ministério da Educação
+                        com cursos gratuitos.
+                    </p>
+
+                    <a
+                        href="https://aprendamais.mec.gov.br/"
+                        target="_blank"
+                        class="button">
+
+                        Ver cursos
+
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- SEGURANÇA -->
+
+        <section class="seguranca">
+
+            <h2>🔐 Segurança na internet</h2>
+
+            <p class="texto-seguranca">
+                Algumas atitudes simples podem ajudar a proteger
+                seus dados e evitar golpes.
+            </p>
+
+
+            <div class="dicas">
+
+
+                <div class="dica">
+
+                    <span>🔑</span>
+
+                    <h3>Senhas</h3>
+
+                    <p>
+                        Utilize senhas diferentes para serviços
+                        importantes e evite informações óbvias.
+                    </p>
+
+                </div>
+
+
+                <div class="dica">
+
+                    <span>⚠️</span>
+
+                    <h3>Links suspeitos</h3>
+
+                    <p>
+                        Não clique em links desconhecidos.
+                        Verifique o endereço do site antes de informar dados.
+                    </p>
+
+                </div>
+
+
+                <div class="dica">
+
+                    <span>📱</span>
+
+                    <h3>Dados pessoais</h3>
+
+                    <p>
+                        Nunca compartilhe senhas ou códigos de
+                        confirmação com outras pessoas.
+                    </p>
+
+                </div>
+
+
+                <div class="dica">
+
+                    <span>🎁</span>
+
+                    <h3>Ofertas falsas</h3>
+
+                    <p>
+                        Desconfie de prêmios, ofertas e mensagens
+                        que exigem pagamento com urgência.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- CELULAR -->
+
+        <section>
+
+            <h2>📱 Dicas para utilizar o celular</h2>
+
+            <div class="dicas-celular">
+
+
+                <div>
+
+                    <h3>🔄 Mantenha o celular atualizado</h3>
+
+                    <p>
+                        Atualizações podem corrigir problemas de segurança
+                        e melhorar o funcionamento do aparelho.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <h3>🔒 Use bloqueio de tela</h3>
+
+                    <p>
+                        Utilize senha, PIN, padrão ou biometria para
+                        impedir o acesso de outras pessoas.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <h3>📥 Cuidado com aplicativos</h3>
+
+                    <p>
+                        Instale aplicativos somente de lojas oficiais
+                        e confira quem é o desenvolvedor.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ACESSIBILIDADE -->
+
+        <section class="acessibilidade">
+
+            <h2>♿ Recursos de acessibilidade</h2>
+
+            <p>
+                Celulares e computadores possuem recursos que podem
+                facilitar o uso da tecnologia por pessoas com diferentes
+                necessidades.
+            </p>
+
+            <ul>
+
+                <li>🔠 Aumentar o tamanho das letras.</li>
+
+                <li>🔊 Utilizar leitores de tela.</li>
+
+                <li>🎨 Ajustar contraste e cores.</li>
+
+                <li>🎤 Utilizar comandos de voz.</li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- DICA -->
+
+        <section class="destaque">
+
+            <h2>💡 Dica importante</h2>
+
+            <p>
+                Antes de informar seus dados pessoais, confira se você
+                está realmente no site oficial do serviço. Evite acessar
+                serviços públicos por links recebidos de desconhecidos.
+            </p>
+
+        </section>
+
+
+        <!-- SOBRE -->
+
+        <section class="sobre">
+
+            <h2>📌 Sobre este projeto</h2>
+
+            <p>
+                Este site foi desenvolvido como parte de um projeto de
+                extensão do curso de Gestão da Tecnologia da Informação,
+                com o objetivo de utilizar a tecnologia para promover
+                inclusão digital, autonomia e cidadania.
+            </p>
+
+            <p>
+                A solução utiliza tecnologias web simples e gratuitas,
+                permitindo que o conteúdo seja acessado por computadores
+                e dispositivos móveis.
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <p>
+            Projeto de Extensão – Gestão da Tecnologia da Informação
+        </p>
+
+        <p>
+            Guia Digital para Inclusão, Cidadania e Segurança
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
