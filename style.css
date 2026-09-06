@@ -612,6 +612,43 @@ body.high-contrast .service-button,
 body.high-contrast .primary-button,
 body.high-contrast .evaluation-button {
     background: #ffff00;
+
+body.high-contrast .security-notice {
+    background: #000;
+    color: #fff;
+    border: 2px solid #fff;
+    border-left: 7px solid #ffff00;
+}
+
+body.high-contrast .security-notice h3,
+body.high-contrast .security-notice p {
+    color: #fff;
+}
+
+body.high-contrast .notice-icon {
+    color: #fff;
+}
+
+body.high-contrast .emergency-section {
+    background: #000;
+    color: #fff;
+}
+
+body.high-contrast .emergency-section .section-heading h2,
+body.high-contrast .emergency-section .section-heading p {
+    color: #fff;
+}
+
+body.high-contrast .phone-card {
+    background: #000;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+body.high-contrast .phone-card strong,
+body.high-contrast .phone-card span {
+    color: #fff;
+}
     color: #000;
 }
 
