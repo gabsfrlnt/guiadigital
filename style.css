@@ -26,7 +26,7 @@ body.large-font {
     margin: 0 auto;
 }
 
-/* ================= ACESSIBILIDADE ================= */
+/* ACESSIBILIDADE */
 
 .accessibility-bar {
     background: #102a43;
@@ -56,7 +56,7 @@ body.large-font {
     background: #dbeafe;
 }
 
-/* ================= HEADER ================= */
+/*  HEADER  */
 
 .header {
     background: linear-gradient(135deg, #075985, #0b5cab, #1976d2);
@@ -82,7 +82,7 @@ body.large-font {
     font-size: 17px;
 }
 
-/* ================= MENU ================= */
+/*  MENU  */
 
 .navbar {
     background: white;
@@ -111,7 +111,7 @@ body.large-font {
     color: #1976d2;
 }
 
-/* ================= HERO ================= */
+/*  HERO  */
 
 .hero-section {
     background: linear-gradient(135deg, #e0f2fe, #ffffff);
@@ -212,7 +212,7 @@ body.large-font {
     font-size: 65px;
 }
 
-/* ================= AVISO ================= */
+/*  AVISO  */
 
 .security-notice {
     margin: 28px 0;
@@ -233,7 +233,7 @@ body.large-font {
     margin-bottom: 5px;
 }
 
-/* ================= SEÇÕES ================= */
+/* SEÇÕES */
 
 main section {
     padding: 38px 0;
@@ -259,7 +259,7 @@ main section {
     color: #607d8b;
 }
 
-/* ================= BUSCA ================= */
+/* BUSCA */
 
 .services-section {
     background: white;
@@ -324,7 +324,7 @@ main section {
     font-size: 22px;
 }
 
-/* ================= CARDS ================= */
+/* CARDS */
 
 .services-grid {
     display: grid;
@@ -401,7 +401,7 @@ main section {
     margin-bottom: 10px;
 }
 
-/* ================= SEGURANÇA ================= */
+/* SEGURANÇA */
 
 .security-section {
     background: #fff7ed;
@@ -433,7 +433,7 @@ main section {
     margin-top: 28px;
 }
 
-/* ================= ACESSIBILIDADE ================= */
+/* ACESSIBILIDADE */
 
 .accessibility-section {
     background: #f5f3ff;
@@ -461,7 +461,7 @@ main section {
     margin: 8px 0;
 }
 
-/* ================= EMERGÊNCIA ================= */
+/* EMERGÊNCIA */
 
 .emergency-section {
     background: #fff;
@@ -491,7 +491,7 @@ main section {
     font-size: 13px;
 }
 
-/* ================= AVALIAÇÃO ================= */
+/* AVALIAÇÃO */
 
 .evaluation-section {
     background: #ecfdf5;
@@ -520,7 +520,7 @@ main section {
     background: #166534;
 }
 
-/* ================= SOBRE ================= */
+/* SOBRE */
 
 .about-section {
     background: #eef2f7;
@@ -535,7 +535,7 @@ main section {
     margin-bottom: 12px;
 }
 
-/* ================= FOOTER ================= */
+/* FOOTER */
 
 footer {
     background: #102a43;
@@ -560,7 +560,7 @@ footer {
     color: #bcccdc;
 }
 
-/* ================= TOPO ================= */
+/* TOPO */
 
 .top-button {
     position: fixed;
@@ -582,7 +582,7 @@ footer {
     display: block;
 }
 
-/* ================= ALTO CONTRASTE ================= */
+/* ALTO CONTRASTE */
 
 body.high-contrast {
     background: #000;
@@ -631,7 +631,7 @@ body.high-contrast .evaluation-section {
     background: #000;
 }
 
-/* ================= RESPONSIVO ================= */
+/* RESPONSIVO */
 
 @media (max-width: 1050px) {
 
@@ -737,9 +737,7 @@ body.high-contrast .evaluation-section {
 
 }
 
-/* =====================================================
-   GUIA DE SEGURANÇA DIGITAL
-===================================================== */
+/* GUIA DE SEGURANÇA DIGITAL= */
 
 .digital-guide {
     margin-top: 30px;
@@ -966,7 +964,7 @@ body.high-contrast .evaluation-section {
 }
 
 
-/* ================= ALTO CONTRASTE ================= */
+/* ALTO CONTRASTE */
 
 body.high-contrast .digital-guide,
 body.high-contrast .digital-guide * {
@@ -1000,7 +998,7 @@ body.high-contrast .source-button {
 }
 
 
-/* ================= CELULAR ================= */
+/* CELULAR */
 
 @media (max-width: 600px) {
 
