@@ -26,7 +26,8 @@ body.large-font {
     margin: 0 auto;
 }
 
-/* ACESSIBILIDADE */
+
+/*  ACESSIBILIDADE */
 
 .accessibility-bar {
     background: #102a43;
@@ -56,7 +57,8 @@ body.large-font {
     background: #dbeafe;
 }
 
-/*  HEADER  */
+
+/*  HEADER */
 
 .header {
     background: linear-gradient(135deg, #075985, #0b5cab, #1976d2);
@@ -82,11 +84,12 @@ body.large-font {
     font-size: 17px;
 }
 
-/*  MENU  */
+
+/*  MENU */
 
 .navbar {
     background: white;
-    box-shadow: 0 2px 10px rgba(0,0,0,.08);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .08);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -111,7 +114,8 @@ body.large-font {
     color: #1976d2;
 }
 
-/*  HERO  */
+
+/* HERO */
 
 .hero-section {
     background: linear-gradient(135deg, #e0f2fe, #ffffff);
@@ -212,7 +216,8 @@ body.large-font {
     font-size: 65px;
 }
 
-/*  AVISO  */
+
+/*  PROTEJA SEUS DADOS */
 
 .security-notice {
     margin: 28px 0;
@@ -232,6 +237,7 @@ body.large-font {
     color: #92400e;
     margin-bottom: 5px;
 }
+
 
 /* SEÇÕES */
 
@@ -259,7 +265,8 @@ main section {
     color: #607d8b;
 }
 
-/* BUSCA */
+
+/*  BUSCA */
 
 .services-section {
     background: white;
@@ -324,7 +331,8 @@ main section {
     font-size: 22px;
 }
 
-/* CARDS */
+
+/* CARDS DE SERVIÇO */
 
 .services-grid {
     display: grid;
@@ -338,13 +346,13 @@ main section {
     background: #ffffff;
     border: 1px solid #dbe5ee;
     border-radius: 13px;
-    box-shadow: 0 3px 10px rgba(0,0,0,.05);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .05);
     transition: .2s;
 }
 
 .service-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 9px 22px rgba(0,0,0,.10);
+    box-shadow: 0 9px 22px rgba(0, 0, 0, .10);
 }
 
 .service-icon {
@@ -401,6 +409,7 @@ main section {
     margin-bottom: 10px;
 }
 
+
 /* SEGURANÇA */
 
 .security-section {
@@ -433,7 +442,8 @@ main section {
     margin-top: 28px;
 }
 
-/* ACESSIBILIDADE */
+
+/*    ACESSIBILIDADE */
 
 .accessibility-section {
     background: #f5f3ff;
@@ -461,7 +471,8 @@ main section {
     margin: 8px 0;
 }
 
-/* EMERGÊNCIA */
+
+/*  EMERGÊNCIA - TELEFONES */
 
 .emergency-section {
     background: #fff;
@@ -490,6 +501,7 @@ main section {
 .phone-card span {
     font-size: 13px;
 }
+
 
 /* AVALIAÇÃO */
 
@@ -520,7 +532,8 @@ main section {
     background: #166534;
 }
 
-/* SOBRE */
+
+/*  SOBRE */
 
 .about-section {
     background: #eef2f7;
@@ -535,7 +548,8 @@ main section {
     margin-bottom: 12px;
 }
 
-/* FOOTER */
+
+/*  FOOTER */
 
 footer {
     background: #102a43;
@@ -560,7 +574,8 @@ footer {
     color: #bcccdc;
 }
 
-/* TOPO */
+
+/*    BOTÃO VOLTAR AO TOPO */
 
 .top-button {
     position: fixed;
@@ -575,206 +590,15 @@ footer {
     font-size: 22px;
     cursor: pointer;
     display: none;
-    box-shadow: 0 4px 12px rgba(0,0,0,.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .2);
 }
 
 .top-button.show {
     display: block;
 }
 
-/* ALTO CONTRASTE */
 
-body.high-contrast {
-    background: #000;
-    color: #fff;
-}
-
-body.high-contrast .navbar,
-body.high-contrast .services-section,
-body.high-contrast .service-card,
-body.high-contrast .security-card,
-body.high-contrast .access-card,
-body.high-contrast .about-section {
-    background: #000;
-    color: #fff;
-    border-color: #fff;
-}
-
-body.high-contrast h2,
-body.high-contrast h3,
-body.high-contrast p,
-body.high-contrast .service-card p,
-body.high-contrast .section-heading p {
-    color: #fff;
-}
-
-body.high-contrast .service-button,
-body.high-contrast .primary-button,
-body.high-contrast .evaluation-button {
-    background: #ffff00;
-
-body.high-contrast .security-notice {
-    background: #000;
-    color: #fff;
-    border: 2px solid #fff;
-    border-left: 7px solid #ffff00;
-}
-
-body.high-contrast .security-notice h3,
-body.high-contrast .security-notice p {
-    color: #fff;
-}
-
-body.high-contrast .notice-icon {
-    color: #fff;
-}
-
-body.high-contrast .emergency-section {
-    background: #000;
-    color: #fff;
-}
-
-body.high-contrast .emergency-section .section-heading h2,
-body.high-contrast .emergency-section .section-heading p {
-    color: #fff;
-}
-
-body.high-contrast .phone-card {
-    background: #000;
-    color: #fff;
-    border: 2px solid #fff;
-}
-
-body.high-contrast .phone-card strong,
-body.high-contrast .phone-card span {
-    color: #fff;
-}
-    color: #000;
-}
-
-body.high-contrast .search-box {
-    background: #000;
-    border-color: #fff;
-}
-
-body.high-contrast .search-box input {
-    color: #fff;
-}
-
-body.high-contrast .hero-section,
-body.high-contrast .security-section,
-body.high-contrast .accessibility-section,
-body.high-contrast .evaluation-section {
-    background: #000;
-}
-
-/* RESPONSIVO */
-
-@media (max-width: 1050px) {
-
-    .services-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .accessibility-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .phone-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-
-@media (max-width: 780px) {
-
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        padding: 40px 0;
-    }
-
-    .hero h2 {
-        font-size: 33px;
-    }
-
-    .hero-buttons {
-        justify-content: center;
-    }
-
-    .hero-illustration {
-        min-width: auto;
-        height: 160px;
-    }
-
-    .computer {
-        font-size: 90px;
-    }
-
-    .globe {
-        font-size: 45px;
-    }
-
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .security-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .evaluation {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .footer-content {
-        grid-template-columns: 1fr;
-    }
-
-}
-
-
-@media (max-width: 520px) {
-
-    .accessibility-content {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .brand h1 {
-        font-size: 30px;
-    }
-
-    .brand-icon {
-        font-size: 40px;
-    }
-
-    .hero h2 {
-        font-size: 28px;
-    }
-
-    .section-heading {
-        align-items: flex-start;
-    }
-
-    .services-grid,
-    .security-grid,
-    .accessibility-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .phone-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .nav-content {
-        gap: 18px;
-    }
-
-}
-
-/* GUIA DE SEGURANÇA DIGITAL= */
+/* GUIA DE SEGURANÇA DIGITAL*/
 
 .digital-guide {
     margin-top: 30px;
@@ -786,7 +610,7 @@ body.high-contrast .evaluation-section {
 }
 
 
-/* Cabeçalho do guia */
+/* Cabeçalho */
 
 .guide-header {
     display: flex;
@@ -1001,17 +825,225 @@ body.high-contrast .evaluation-section {
 }
 
 
-/* ALTO CONTRASTE */
+/*  ALTO CONTRASTE */
 
-body.high-contrast .digital-guide,
-body.high-contrast .digital-guide * {
-    background-color: #000;
+/* Fundo geral */
+
+body.high-contrast {
+    background: #000;
+    color: #fff;
+}
+
+
+/* Barra de acessibilidade */
+
+body.high-contrast .accessibility-bar {
+    background: #000;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+body.high-contrast .accessibility-content button {
+    background: #ffff00;
+    color: #000;
+    border: 1px solid #ffff00;
+}
+
+
+/* Header */
+
+body.high-contrast .header {
+    background: #000;
+    color: #fff;
+}
+
+
+/* Menu */
+
+body.high-contrast .navbar {
+    background: #000;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+body.high-contrast .nav-content a {
+    color: #ffff00;
+}
+
+body.high-contrast .nav-content a:hover {
+    color: #fff;
+}
+
+
+/* Hero */
+
+body.high-contrast .hero-section {
+    background: #000;
+    color: #fff;
+}
+
+body.high-contrast .hero h2,
+body.high-contrast .hero p {
+    color: #fff;
+}
+
+body.high-contrast .badge {
+    background: #ffff00;
+    color: #000;
+}
+
+body.high-contrast .primary-button {
+    background: #ffff00;
+    color: #000;
+}
+
+body.high-contrast .secondary-button {
+    background: #000;
+    color: #ffff00;
+    border-color: #ffff00;
+}
+
+
+/*    PROTEJA SEUS DADOS - ALTO CONTRASTE */
+
+body.high-contrast .security-notice {
+    background: #000;
+    color: #fff;
+    border: 2px solid #fff;
+    border-left: 7px solid #ffff00;
+}
+
+body.high-contrast .security-notice h3,
+body.high-contrast .security-notice p {
+    color: #fff;
+}
+
+body.high-contrast .notice-icon {
+    color: #fff;
+}
+
+
+/* Serviços */
+
+body.high-contrast .services-section {
+    background: #000;
+    color: #fff;
+}
+
+body.high-contrast .section-heading h2,
+body.high-contrast .section-heading p {
+    color: #fff;
+}
+
+body.high-contrast .search-box {
+    background: #000;
+    border-color: #fff;
+}
+
+body.high-contrast .search-box input {
+    background: #000;
+    color: #fff;
+}
+
+body.high-contrast .search-box input::placeholder {
+    color: #ccc;
+}
+
+body.high-contrast .filter-button {
+    background: #000;
+    color: #fff;
+    border-color: #fff;
+}
+
+body.high-contrast .filter-button:hover,
+body.high-contrast .filter-button.active {
+    background: #ffff00;
+    color: #000;
+    border-color: #ffff00;
+}
+
+
+/* Cards de serviços */
+
+body.high-contrast .service-card {
+    background: #000;
+    color: #fff;
+    border-color: #fff;
+}
+
+body.high-contrast .service-card h3,
+body.high-contrast .service-card p {
+    color: #fff;
+}
+
+body.high-contrast .featured {
+    border-top-color: #ffff00;
+}
+
+body.high-contrast .featured-label {
+    background: #000;
+    color: #ffff00;
+    border: 1px solid #ffff00;
+}
+
+body.high-contrast .service-button {
+    background: #ffff00;
+    color: #000;
+}
+
+body.high-contrast .no-results {
+    color: #fff;
+}
+
+
+/* Segurança */
+
+body.high-contrast .security-section {
+    background: #000;
+    color: #fff;
+}
+
+body.high-contrast .security-card {
+    background: #000;
+    color: #fff;
+    border-color: #fff;
+}
+
+body.high-contrast .security-card h3,
+body.high-contrast .security-card p {
+    color: #fff;
+}
+
+
+/* Guia de segurança */
+
+body.high-contrast .digital-guide {
+    background: #000;
     color: #fff;
     border-color: #fff;
 }
 
 body.high-contrast .guide-header {
     background: #000;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+body.high-contrast .guide-header h3,
+body.high-contrast .guide-header p {
+    color: #fff;
+}
+
+body.high-contrast .guide-item {
+    background: #000;
+    color: #fff;
+    border-color: #fff;
+}
+
+body.high-contrast .guide-item h4,
+body.high-contrast .guide-item p,
+body.high-contrast .guide-item li {
+    color: #fff;
 }
 
 body.high-contrast .guide-number {
@@ -1027,6 +1059,13 @@ body.high-contrast .security-final,
 body.high-contrast .official-source {
     background: #000;
     color: #fff;
+    border-color: #fff;
+}
+
+body.high-contrast .checklist h3,
+body.high-contrast .security-final,
+body.high-contrast .official-source p {
+    color: #fff;
 }
 
 body.high-contrast .source-button {
@@ -1035,7 +1074,176 @@ body.high-contrast .source-button {
 }
 
 
-/* CELULAR */
+/* Acessibilidade */
+
+body.high-contrast .accessibility-section {
+    background: #000;
+    color: #fff;
+}
+
+body.high-contrast .access-card {
+    background: #000;
+    color: #fff;
+    border-color: #fff;
+}
+
+body.high-contrast .access-card h3,
+body.high-contrast .access-card p {
+    color: #fff;
+}
+
+
+/* TELEFONES IMPORTANTES - ALTO CONTRASTE */
+
+body.high-contrast .emergency-section {
+    background: #000;
+    color: #fff;
+}
+
+body.high-contrast .emergency-section .section-heading h2,
+body.high-contrast .emergency-section .section-heading p {
+    color: #fff;
+}
+
+body.high-contrast .phone-card {
+    background: #000;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+body.high-contrast .phone-card strong {
+    color: #ffff00;
+}
+
+body.high-contrast .phone-card span {
+    color: #fff;
+}
+
+
+/* Avaliação */
+
+body.high-contrast .evaluation-section {
+    background: #000;
+    color: #fff;
+}
+
+body.high-contrast .evaluation h2,
+body.high-contrast .evaluation p {
+    color: #fff;
+}
+
+body.high-contrast .evaluation-button {
+    background: #ffff00;
+    color: #000;
+}
+
+
+/* Sobre */
+
+body.high-contrast .about-section {
+    background: #000;
+    color: #fff;
+}
+
+body.high-contrast .about-section h2,
+body.high-contrast .about-section p {
+    color: #fff;
+}
+
+
+/* Footer */
+
+body.high-contrast footer {
+    background: #000;
+    color: #fff;
+    border-top: 1px solid #fff;
+}
+
+body.high-contrast .footer-content,
+body.high-contrast .footer-content p,
+body.high-contrast .footer-bottom {
+    color: #fff;
+}
+
+body.high-contrast .footer-bottom {
+    border-color: #fff;
+}
+
+
+/* Botão voltar ao topo */
+
+body.high-contrast .top-button {
+    background: #ffff00;
+    color: #000;
+}
+
+
+/*  RESPONSIVO= */
+
+@media (max-width: 1050px) {
+
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .accessibility-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .phone-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media (max-width: 780px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 0;
+    }
+
+    .hero h2 {
+        font-size: 33px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-illustration {
+        min-width: auto;
+        height: 160px;
+    }
+
+    .computer {
+        font-size: 90px;
+    }
+
+    .globe {
+        font-size: 45px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .security-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .evaluation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+}
+
 
 @media (max-width: 600px) {
 
@@ -1070,3 +1278,42 @@ body.high-contrast .source-button {
 
 }
 
+
+@media (max-width: 520px) {
+
+    .accessibility-content {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .brand h1 {
+        font-size: 30px;
+    }
+
+    .brand-icon {
+        font-size: 40px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+    }
+
+    .services-grid,
+    .security-grid,
+    .accessibility-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .phone-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-content {
+        gap: 18px;
+    }
+
+}
