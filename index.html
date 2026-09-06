@@ -2,1196 +2,1387 @@
 <html lang="pt-BR">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-        content="Guia Digital para facilitar o acesso da comunidade a serviços públicos, educação, saúde, emprego e segurança digital.">
+        content="Guia Digital para facilitar o acesso da comunidade a serviços públicos, saúde, educação, emprego, cidadania e segurança digital.">
 
-    <title>Guia Digital | Serviços e Cidadania</title>
+    <meta name="theme-color" content="#0b5cab">
+
+    <title>Guia Digital | Inclusão e Cidadania</title>
 
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 
 <body>
 
+    <!-- ================= ACESSIBILIDADE ================= -->
 
-<!-- ================= HEADER ================= -->
+    <div class="accessibility-bar">
 
-<header class="header">
+        <div class="container accessibility-content">
 
-    <div class="container header-content">
+            <span>Acessibilidade:</span>
 
-        <div>
+            <button id="increaseFont" aria-label="Aumentar tamanho da fonte">
+                A+
+            </button>
 
-            <span class="logo-icon">💻</span>
+            <button id="decreaseFont" aria-label="Diminuir tamanho da fonte">
+                A-
+            </button>
 
-            <h1>Guia Digital</h1>
+            <button id="resetFont" aria-label="Restaurar tamanho da fonte">
+                A
+            </button>
 
-            <p>
-                Serviços, cidadania e segurança na internet
-            </p>
-
-        </div>
-
-    </div>
-
-</header>
-
-
-<!-- ================= MENU ================= -->
-
-<nav class="menu">
-
-    <div class="container menu-content">
-
-        <a href="#inicio">Início</a>
-
-        <a href="#servicos">Serviços</a>
-
-        <a href="#seguranca">Segurança</a>
-
-        <a href="#acessibilidade">Acessibilidade</a>
-
-        <a href="#avaliacao">Avaliação</a>
-
-    </div>
-
-</nav>
-
-
-<!-- ================= PRINCIPAL ================= -->
-
-<main class="container">
-
-
-<!-- ================= INÍCIO ================= -->
-
-<section id="inicio" class="hero">
-
-    <div class="hero-text">
-
-        <span class="tag">
-            INCLUSÃO DIGITAL
-        </span>
-
-        <h2>
-            Encontre serviços digitais de forma simples e segura
-        </h2>
-
-        <p>
-            Este guia reúne links para serviços públicos,
-            educação, saúde, emprego, benefícios e informações
-            importantes para o dia a dia.
-        </p>
-
-        <p>
-            Escolha uma categoria ou pesquise pelo serviço que
-            você precisa.
-        </p>
-
-    </div>
-
-
-    <div class="hero-icon">
-        🌐
-    </div>
-
-</section>
-
-
-<!-- ================= AVISO ================= -->
-
-<section class="notice">
-
-    <strong>🔐 Atenção à sua segurança</strong>
-
-    <p>
-        Este site não solicita CPF, senha, dados bancários ou
-        códigos de confirmação. Os botões direcionam você para
-        páginas oficiais. Antes de informar qualquer dado,
-        confira o endereço do site.
-    </p>
-
-</section>
-
-
-<!-- ================= BUSCA ================= -->
-
-<section class="search-section">
-
-    <h2>🔎 O que você procura?</h2>
-
-    <p>
-        Digite o nome do serviço, documento ou assunto.
-    </p>
-
-    <input
-        type="search"
-        id="searchInput"
-        placeholder="Ex.: CPF, INSS, emprego, CNH..."
-        aria-label="Pesquisar serviço">
-
-
-    <p id="noResults" class="no-results">
-        Nenhum serviço encontrado.
-    </p>
-
-</section>
-
-
-<!-- ================= SERVIÇOS ================= -->
-
-<section id="servicos">
-
-    <div class="section-title">
-
-        <span>📚</span>
-
-        <div>
-
-            <h2>Serviços digitais</h2>
-
-            <p>
-                Acesse os principais serviços oficiais.
-            </p>
+            <button id="contrastButton">
+                ◐ Alto contraste
+            </button>
 
         </div>
 
     </div>
 
 
-    <div class="cards">
+    <!-- ================= CABEÇALHO ================= -->
 
+    <header class="header">
 
-        <!-- GOV.BR -->
+        <div class="container header-content">
 
-        <article class="card service-card">
+            <div class="brand">
 
-            <div class="card-icon">🏛️</div>
+                <div class="brand-icon">
+                    💻
+                </div>
 
-            <h3>Gov.br</h3>
+                <div>
 
-            <p>
-                Portal que reúne milhares de serviços públicos
-                digitais do Governo Federal.
-            </p>
+                    <h1>Guia Digital</h1>
 
-            <a
-                href="https://www.gov.br/"
-                target="_blank"
-                rel="noopener"
-                class="button">
+                    <p>
+                        Inclusão, cidadania e segurança digital
+                    </p>
 
-                Acessar Gov.br
+                </div>
 
-            </a>
-
-        </article>
-
-
-        <!-- CONTA GOV -->
-
-        <article class="card service-card">
-
-            <div class="card-icon">🔑</div>
-
-            <h3>Conta Gov.br</h3>
-
-            <p>
-                Crie ou acesse sua conta para utilizar diversos
-                serviços digitais do governo.
-            </p>
-
-            <a
-                href="https://www.gov.br/pt-br/servicos/criar-sua-conta-gov.br"
-                target="_blank"
-                rel="noopener"
-                class="button">
-
-                Acessar
-
-            </a>
-
-        </article>
-
-
-        <!-- ASSINATURA -->
-
-        <article class="card service-card">
-
-            <div class="card-icon">✍️</div>
-
-            <h3>Assinatura Eletrônica</h3>
-
-            <p>
-                Consulte informações sobre assinatura eletrônica
-                utilizando a plataforma Gov.br.
-            </p>
-
-            <a
-                href="https://www.gov.br/governodigital/pt-br/assinatura-eletronica"
-                target="_blank"
-                rel="noopener"
-                class="button">
-
-                Conhecer
-
-            </a>
-
-        </article>
-
-
-        <!-- CPF -->
-
-        <article class="card service-card">
-
-            <div class="card-icon">🪪</div>
-
-            <h3>CPF</h3>
-
-            <p>
-                Consulte serviços e informações relacionados
-                ao Cadastro de Pessoas Físicas.
-            </p>
-
-            <a
-                href="https://www.gov.br/receitafederal/pt-br/assuntos/meu-cpf"
-                target="_blank"
-                rel="noopener"
-                class="button">
-
-                Acessar
-
-            </a>
-
-        </article>
-
-
-        <!-- RECEITA -->
-
-        <article class="card service-card">
-
-            <div class="card-icon">💰</div>
-
-            <h3>Receita Federal</h3>
-
-            <p>
-                Acesse serviços relacionados a impostos,
-                documentos e situação fiscal.
-            </p>
-
-            <a
-                href="https://www.gov.br/receitafederal/"
-                target="_blank"
-                rel="noopener"
-                class="button">
-
-                Acessar
-
-            </a>
-
-        </article>
-
-
-        <!-- IMPOSTO DE RENDA -->
-
-        <article class="card service-card">
-
-            <div class="card-icon">🧾</div>
-
-            <h3>Imposto de Renda</h3>
-
-            <p>
-                Consulte informações e serviços relacionados
-                ao Imposto de Renda.
-            </p>
-
-            <a
-                href="https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda"
-                target="_blank"
-                rel="noopener"
-                class="button">
-
-                Acessar
-
-            </a>
-
-        </article>
-
-
-        <!-- VALORES A RECEBER -->
-
-        <article class="card service-card">
-
-            <div class="card-icon">💵</div>
-
-            <h3>Valores a Receber</h3>
-
-            <p>
-                Consulte informações sobre valores esquecidos
-                no sistema financeiro.
-            </p>
-
-            <a
-                href="https://www.bcb.gov.br/meubc/valores-a-receber"
-                target="_blank"
-                rel="noopener"
-                class="button">
-
-                Consultar
-
-            </a>
-
-        </article>
-
-
-        <!-- INSS -->
-
-        <article class="card service-card">
-
-            <div class="card-icon">👴</div>
-
-            <h3>Meu INSS</h3>
-
-            <p>
-                Consulte benefícios, requerimentos, extratos
-                e outros serviços previdenciários.
-            </p>
-
-            <a
-                href="https://www.gov.br/inss/pt-br/canais_atendimento/meu-inss"
-                target="_blank"
-                rel="noopener"
-                class="button">
-
-                Acessar
-
-            </a>
-
-        </article>
-
-
-        <!-- CARTEIRA -->
-
-        <article class="card service-card">
-
-            <div class="card-icon">💼</div>
-
-            <h3>Carteira de Trabalho Digital</h3>
-
-            <p>
-                Consulte contratos e informações da sua vida
-                profissional.
-            </p>
-
-            <a
-                href="https://www.gov.br/pt-br/temas/carteira-de-trabalho-digital"
-                target="_blank"
-                rel="noopener"
-                class="button">
-
-                Acessar
-
-            </a>
-
-        </article>
-
-
-        <!-- EMPREGA BRASIL -->
-
-        <article class="card service-card">
-
-            <div class="card-icon">🔎</div>
-
-            <h3>Emprega Brasil</h3>
-
-            <p>
-                Consulte serviços relacionados a emprego,
-                trabalho e qualificação profissional.
-            </p>
-
-            <a
-                href="https://empregabrasil.mte.gov.br/"
-                target="_blank"
-                rel="noopener"
-                class="button">
-
-                Acessar
-
-            </a>
-
-        </article>
-
-
-        <!-- SEGURO DESEMPREGO -->
-
-        <article class="card service-card">
-
-            <div class="card-icon">📄</div>
-
-            <h3>Seguro-Desemprego</h3>
-
-            <p>
-                Consulte informações e serviços relacionados
-                ao seguro-desemprego.
-            </p>
-
-            <a
-                href="https://www.gov.br/pt-br/servicos/solicitar-o-seguro-desemprego"
-                target="_blank"
-                rel="noopener"
-                class="button">
-
-                Consultar
-
-            </a>
-
-        </article>
-
-
-        <!-- ABONO -->
-
-        <article class="card service-card">
-
-            <div class="card-icon">💳</div>
-
-            <h3>Abono Salarial</h3>
-
-            <p>
-                Consulte informações sobre o benefício e
-                calendário de pagamentos.
-            </p>
-
-            <a
-                href="https://www.gov.br/trabalho-e-emprego/pt-br/servicos/trabalhador/abono-salarial"
-                target="_blank"
-                rel="noopener"
-                class="button">
-
-                Consultar
-
-            </a>
-
-        </article>
-
-
-        <!-- SUS -->
-
-        <article class="card service-card">
-
-            <div class="card-icon">🏥</div>
-
-            <h3>Meu SUS Digital</h3>
-
-            <p>
-                Acesse informações e serviços digitais
-                relacionados ao SUS.
-            </p>
-
-            <a
-                href="https://www.gov.br/saude/pt-br/composicao/seidigi/meu-sus-digital"
-                target="_blank"
-                rel="noopener"
-                class="button">
-
-                Acessar
-
-            </a>
-
-        </article>
-
-
-        <!-- MINISTÉRIO SAÚDE -->
-
-        <article class="card service-card">
-
-            <div class="card-icon">🩺</div>
-
-            <h3>Ministério da Saúde</h3>
-
-            <p>
-                Consulte informações oficiais sobre saúde,
-                campanhas e vacinação.
-            </p>
-
-            <a
-                href="https://www.gov.br/saude/"
-                target="_blank"
-                rel="noopener"
-                class="button">
-
-                Acessar
-
-            </a>
-
-        </article>
-
-
-        <!-- TRÂNSITO -->
-
-        <article class="card service-card">
-
-            <div class="card-icon">🚗</div>
-
-            <h3>Carteira Digital de Trânsito</h3>
-
-            <p>
-                Acesse sua CNH e documentos digitais do veículo.
-            </p>
-
-            <a
-                href="https://www.gov.br/pt-br/servicos/obter-carteira-digital-de-transito"
-                target="_blank"
-                rel="noopener"
-                class="button">
-
-                Acessar
-
-            </a>
-
-        </article>
-
-
-        <!-- SENATRAN -->
-
-        <article class="card service-card">
-
-            <div class="card-icon">🛣️</div>
-
-            <h3>Senatran</h3>
-
-            <p>
-                Consulte serviços e informações nacionais
-                relacionados ao trânsito.
-            </p>
-
-            <a
-                href="https://www.gov.br/transportes/pt-br/assuntos/transito/senatran"
-                target="_blank"
-                rel="noopener"
-                class="button">
-
-                Acessar
-
-            </a>
-
-        </article>
-
-
-        <!-- EDUCAÇÃO -->
-
-        <article class="card service-card">
-
-            <div class="card-icon">🎓</div>
-
-            <h3>Ministério da Educação</h3>
-
-            <p>
-                Consulte programas, serviços e informações
-                oficiais sobre educação.
-            </p>
-
-            <a
-                href="https://www.gov.br/mec/"
-                target="_blank"
-                rel="noopener"
-                class="button">
-
-                Acessar
-
-            </a>
-
-        </article>
-
-
-        <!-- ESCOLA VIRTUAL -->
-
-        <article class="card service-card">
-
-            <div class="card-icon">📚</div>
-
-            <h3>Escola Virtual</h3>
-
-            <p>
-                Cursos gratuitos para desenvolvimento
-                profissional e pessoal.
-            </p>
-
-            <a
-                href="https://www.ev.org.br/"
-                target="_blank"
-                rel="noopener"
-                class="button">
-
-                Ver cursos
-
-            </a>
-
-        </article>
-
-
-        <!-- APRENDA MAIS -->
-
-        <article class="card service-card">
-
-            <div class="card-icon">📖</div>
-
-            <h3>Aprenda Mais</h3>
-
-            <p>
-                Plataforma com cursos gratuitos para
-                aprendizagem e qualificação.
-            </p>
-
-            <a
-                href="https://aprendamais.mec.gov.br/"
-                target="_blank"
-                rel="noopener"
-                class="button">
-
-                Ver cursos
-
-            </a>
-
-        </article>
-
-
-        <!-- CADASTRO ÚNICO -->
-
-        <article class="card service-card">
-
-            <div class="card-icon">🏠</div>
-
-            <h3>Cadastro Único</h3>
-
-            <p>
-                Consulte informações sobre o Cadastro Único
-                e programas sociais.
-            </p>
-
-            <a
-                href="https://www.gov.br/mds/pt-br/acoes-e-programas/cadastro-unico"
-                target="_blank"
-                rel="noopener"
-                class="button">
-
-                Acessar
-
-            </a>
-
-        </article>
-
-
-        <!-- BOLSA FAMÍLIA -->
-
-        <article class="card service-card">
-
-            <div class="card-icon">👨‍👩‍👧</div>
-
-            <h3>Bolsa Família</h3>
-
-            <p>
-                Consulte informações oficiais sobre o
-                programa e seus serviços.
-            </p>
-
-            <a
-                href="https://www.gov.br/mds/pt-br/acoes-e-programas/bolsa-familia"
-                target="_blank"
-                rel="noopener"
-                class="button">
-
-                Conhecer
-
-            </a>
-
-        </article>
-
-
-        <!-- CELULAR SEGURO -->
-
-        <article class="card service-card">
-
-            <div class="card-icon">📱</div>
-
-            <h3>Celular Seguro</h3>
-
-            <p>
-                Consulte o serviço oficial para proteção
-                do celular em situações de roubo ou furto.
-            </p>
-
-            <a
-                href="https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/celular-seguro"
-                target="_blank"
-                rel="noopener"
-                class="button">
-
-                Acessar
-
-            </a>
-
-        </article>
-
-
-        <!-- CONSUMIDOR -->
-
-        <article class="card service-card">
-
-            <div class="card-icon">🛒</div>
-
-            <h3>Consumidor.gov.br</h3>
-
-            <p>
-                Plataforma para registrar reclamações
-                e buscar solução com empresas participantes.
-            </p>
-
-            <a
-                href="https://www.consumidor.gov.br/"
-                target="_blank"
-                rel="noopener"
-                class="button">
-
-                Acessar
-
-            </a>
-
-        </article>
-
-
-        <!-- FALA BR -->
-
-        <article class="card service-card">
-
-            <div class="card-icon">📢</div>
-
-            <h3>Fala.BR</h3>
-
-            <p>
-                Canal para manifestações e acesso à informação
-                relacionadas ao Governo Federal.
-            </p>
-
-            <a
-                href="https://falabr.cgu.gov.br/"
-                target="_blank"
-                rel="noopener"
-                class="button">
-
-                Acessar
-
-            </a>
-
-        </article>
-
-
-        <!-- TÍTULO ELEITOR -->
-
-        <article class="card service-card">
-
-            <div class="card-icon">🗳️</div>
-
-            <h3>Justiça Eleitoral</h3>
-
-            <p>
-                Acesse serviços e informações oficiais
-                relacionados ao eleitor.
-            </p>
-
-            <a
-                href="https://www.tse.jus.br/"
-                target="_blank"
-                rel="noopener"
-                class="button">
-
-                Acessar
-
-            </a>
-
-        </article>
-
-
-        <!-- PASSAPORTE -->
-
-        <article class="card service-card">
-
-            <div class="card-icon">✈️</div>
-
-            <h3>Passaporte</h3>
-
-            <p>
-                Consulte informações oficiais para solicitar
-                ou acompanhar seu passaporte.
-            </p>
-
-            <a
-                href="https://www.gov.br/pf/pt-br/assuntos/passaporte"
-                target="_blank"
-                rel="noopener"
-                class="button">
-
-                Acessar
-
-            </a>
-
-        </article>
-
-
-    </div>
-
-</section>
-
-
-<!-- ================= SEGURANÇA ================= -->
-
-<section id="seguranca" class="security-section">
-
-    <div class="section-title">
-
-        <span>🔐</span>
-
-        <div>
-
-            <h2>Segurança digital</h2>
-
-            <p>
-                Proteja seus dados e evite golpes.
-            </p>
+            </div>
 
         </div>
 
-    </div>
+    </header>
 
 
-    <div class="security-grid">
+    <!-- ================= MENU ================= -->
 
+    <nav class="navbar">
 
-        <div class="security-card">
+        <div class="container nav-content">
 
-            <span>🔑</span>
+            <a href="#inicio">Início</a>
 
-            <h3>Proteja suas senhas</h3>
+            <a href="#servicos">Serviços</a>
 
-            <p>
-                Não compartilhe senhas e evite utilizar
-                informações fáceis de descobrir.
-            </p>
+            <a href="#seguranca">Segurança</a>
 
-        </div>
+            <a href="#acessibilidade">Acessibilidade</a>
 
-
-        <div class="security-card">
-
-            <span>⚠️</span>
-
-            <h3>Cuidado com links</h3>
-
-            <p>
-                Desconfie de links recebidos por mensagens,
-                especialmente quando houver urgência.
-            </p>
+            <a href="#avaliacao">Avaliação</a>
 
         </div>
 
+    </nav>
 
-        <div class="security-card">
 
-            <span>💳</span>
+    <main>
 
-            <h3>Proteja seus dados bancários</h3>
 
-            <p>
-                Nunca informe senhas, códigos de confirmação
-                ou dados bancários para desconhecidos.
-            </p>
+        <!-- ================= HERO ================= -->
+
+        <section id="inicio" class="hero-section">
+
+            <div class="container hero">
+
+                <div class="hero-content">
+
+                    <span class="badge">
+                        🌐 INCLUSÃO DIGITAL
+                    </span>
+
+                    <h2>
+                        Encontre serviços digitais de forma simples e segura
+                    </h2>
+
+                    <p>
+                        Um guia criado para facilitar o acesso da comunidade
+                        a serviços públicos, saúde, educação, emprego,
+                        benefícios e informações importantes.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#servicos" class="primary-button">
+                            🔎 Encontrar serviços
+                        </a>
+
+                        <a href="#seguranca" class="secondary-button">
+                            🔐 Segurança digital
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-illustration">
+
+                    <div class="computer">
+                        💻
+                    </div>
+
+                    <div class="globe">
+                        🌎
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= AVISO ================= -->
+
+        <section class="container">
+
+            <div class="security-notice">
+
+                <div class="notice-icon">
+                    🔐
+                </div>
+
+                <div>
+
+                    <h3>Proteja seus dados</h3>
+
+                    <p>
+                        Este site não solicita CPF, senha, dados bancários
+                        ou códigos de confirmação. Os botões apenas direcionam
+                        para páginas externas. Antes de informar seus dados,
+                        confirme se está em um site oficial.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= BUSCA ================= -->
+
+        <section id="servicos" class="container services-section">
+
+            <div class="section-heading">
+
+                <span class="section-icon">
+                    🔎
+                </span>
+
+                <div>
+
+                    <h2>Encontre um serviço</h2>
+
+                    <p>
+                        Pesquise pelo nome do serviço ou escolha uma categoria.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="search-box">
+
+                <span>🔎</span>
+
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Ex.: CPF, INSS, CNH, emprego, cursos..."
+                    autocomplete="off"
+                    aria-label="Pesquisar serviços">
+
+            </div>
+
+
+            <!-- ================= FILTROS ================= -->
+
+            <div class="filters">
+
+                <button class="filter-button active" data-category="todos">
+                    Todos
+                </button>
+
+                <button class="filter-button" data-category="governo">
+                    🏛️ Governo
+                </button>
+
+                <button class="filter-button" data-category="trabalho">
+                    💼 Trabalho
+                </button>
+
+                <button class="filter-button" data-category="saude">
+                    🏥 Saúde
+                </button>
+
+                <button class="filter-button" data-category="educacao">
+                    🎓 Educação
+                </button>
+
+                <button class="filter-button" data-category="financas">
+                    💰 Finanças
+                </button>
+
+                <button class="filter-button" data-category="transito">
+                    🚗 Trânsito
+                </button>
+
+                <button class="filter-button" data-category="cidadania">
+                    🧑‍🤝‍🧑 Cidadania
+                </button>
+
+            </div>
+
+
+            <!-- ================= DESTAQUES ================= -->
+
+            <div class="featured-title">
+
+                <h3>⭐ Serviços em destaque</h3>
+
+                <p>
+                    Alguns dos serviços mais importantes para começar.
+                </p>
+
+            </div>
+
+
+            <div class="services-grid" id="servicesGrid">
+
+
+                <!-- GOV.BR -->
+
+                <article class="service-card featured"
+                    data-category="governo">
+
+                    <div class="service-icon">
+                        🏛️
+                    </div>
+
+                    <span class="featured-label">
+                        ⭐ Destaque
+                    </span>
+
+                    <h3>Gov.br</h3>
+
+                    <p>
+                        Portal que reúne serviços digitais do Governo Federal.
+                    </p>
+
+                    <a
+                        href="https://www.gov.br/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="service-button">
+
+                        Acessar serviço ↗
+
+                    </a>
+
+                </article>
+
+
+                <!-- CONTA GOV -->
+
+                <article class="service-card featured"
+                    data-category="governo">
+
+                    <div class="service-icon">
+                        🔑
+                    </div>
+
+                    <span class="featured-label">
+                        ⭐ Destaque
+                    </span>
+
+                    <h3>Conta Gov.br</h3>
+
+                    <p>
+                        Acesse diversos serviços digitais utilizando sua conta.
+                    </p>
+
+                    <a
+                        href="https://www.gov.br/pt-br/servicos/criar-sua-conta-gov.br"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="service-button">
+
+                        Acessar serviço ↗
+
+                    </a>
+
+                </article>
+
+
+                <!-- CPF -->
+
+                <article class="service-card"
+                    data-category="governo">
+
+                    <div class="service-icon">
+                        🪪
+                    </div>
+
+                    <h3>CPF</h3>
+
+                    <p>
+                        Consulte serviços relacionados ao Cadastro de Pessoas Físicas.
+                    </p>
+
+                    <a
+                        href="https://www.gov.br/receitafederal/pt-br/assuntos/meu-cpf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="service-button">
+
+                        Acessar serviço ↗
+
+                    </a>
+
+                </article>
+
+
+                <!-- RECEITA -->
+
+                <article class="service-card"
+                    data-category="financas">
+
+                    <div class="service-icon">
+                        🧾
+                    </div>
+
+                    <h3>Receita Federal</h3>
+
+                    <p>
+                        Consulte serviços relacionados a documentos e situação fiscal.
+                    </p>
+
+                    <a
+                        href="https://www.gov.br/receitafederal/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="service-button">
+
+                        Acessar serviço ↗
+
+                    </a>
+
+                </article>
+
+
+                <!-- INSS -->
+
+                <article class="service-card featured"
+                    data-category="governo">
+
+                    <div class="service-icon">
+                        👴
+                    </div>
+
+                    <span class="featured-label">
+                        ⭐ Destaque
+                    </span>
+
+                    <h3>Meu INSS</h3>
+
+                    <p>
+                        Consulte benefícios, requerimentos e serviços previdenciários.
+                    </p>
+
+                    <a
+                        href="https://www.gov.br/inss/pt-br/canais_atendimento/meu-inss"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="service-button">
+
+                        Acessar serviço ↗
+
+                    </a>
+
+                </article>
+
+
+                <!-- CARTEIRA TRABALHO -->
+
+                <article class="service-card featured"
+                    data-category="trabalho">
+
+                    <div class="service-icon">
+                        💼
+                    </div>
+
+                    <span class="featured-label">
+                        ⭐ Destaque
+                    </span>
+
+                    <h3>Carteira de Trabalho Digital</h3>
+
+                    <p>
+                        Consulte contratos e informações da vida profissional.
+                    </p>
+
+                    <a
+                        href="https://www.gov.br/pt-br/temas/carteira-de-trabalho-digital"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="service-button">
+
+                        Acessar serviço ↗
+
+                    </a>
+
+                </article>
+
+
+                <!-- EMPREGA BRASIL -->
+
+                <article class="service-card"
+                    data-category="trabalho">
+
+                    <div class="service-icon">
+                        🔎
+                    </div>
+
+                    <h3>Emprega Brasil</h3>
+
+                    <p>
+                        Serviços relacionados a emprego, trabalho e qualificação.
+                    </p>
+
+                    <a
+                        href="https://empregabrasil.mte.gov.br/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="service-button">
+
+                        Acessar serviço ↗
+
+                    </a>
+
+                </article>
+
+
+                <!-- SEGURO DESEMPREGO -->
+
+                <article class="service-card"
+                    data-category="trabalho">
+
+                    <div class="service-icon">
+                        📄
+                    </div>
+
+                    <h3>Seguro-Desemprego</h3>
+
+                    <p>
+                        Consulte informações e solicite o benefício.
+                    </p>
+
+                    <a
+                        href="https://www.gov.br/pt-br/servicos/solicitar-o-seguro-desemprego"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="service-button">
+
+                        Acessar serviço ↗
+
+                    </a>
+
+                </article>
+
+
+                <!-- SUS -->
+
+                <article class="service-card featured"
+                    data-category="saude">
+
+                    <div class="service-icon">
+                        🏥
+                    </div>
+
+                    <span class="featured-label">
+                        ⭐ Destaque
+                    </span>
+
+                    <h3>Meu SUS Digital</h3>
+
+                    <p>
+                        Acesse informações e serviços digitais relacionados ao SUS.
+                    </p>
+
+                    <a
+                        href="https://www.gov.br/saude/pt-br/composicao/seidigi/meu-sus-digital"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="service-button">
+
+                        Acessar serviço ↗
+
+                    </a>
+
+                </article>
+
+
+                <!-- SAÚDE -->
+
+                <article class="service-card"
+                    data-category="saude">
+
+                    <div class="service-icon">
+                        🩺
+                    </div>
+
+                    <h3>Ministério da Saúde</h3>
+
+                    <p>
+                        Informações oficiais sobre saúde, vacinação e SUS.
+                    </p>
+
+                    <a
+                        href="https://www.gov.br/saude/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="service-button">
+
+                        Acessar serviço ↗
+
+                    </a>
+
+                </article>
+
+
+                <!-- MEC -->
+
+                <article class="service-card"
+                    data-category="educacao">
+
+                    <div class="service-icon">
+                        🎓
+                    </div>
+
+                    <h3>Ministério da Educação</h3>
+
+                    <p>
+                        Programas, serviços e informações oficiais sobre educação.
+                    </p>
+
+                    <a
+                        href="https://www.gov.br/mec/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="service-button">
+
+                        Acessar serviço ↗
+
+                    </a>
+
+                </article>
+
+
+                <!-- ESCOLA VIRTUAL -->
+
+                <article class="service-card"
+                    data-category="educacao">
+
+                    <div class="service-icon">
+                        📚
+                    </div>
+
+                    <h3>Escola Virtual</h3>
+
+                    <p>
+                        Cursos gratuitos para desenvolvimento profissional e pessoal.
+                    </p>
+
+                    <a
+                        href="https://www.ev.org.br/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="service-button">
+
+                        Ver cursos ↗
+
+                    </a>
+
+                </article>
+
+
+                <!-- APRENDA MAIS -->
+
+                <article class="service-card"
+                    data-category="educacao">
+
+                    <div class="service-icon">
+                        📖
+                    </div>
+
+                    <h3>Aprenda Mais</h3>
+
+                    <p>
+                        Plataforma de cursos gratuitos para aprendizagem e qualificação.
+                    </p>
+
+                    <a
+                        href="https://aprendamais.mec.gov.br/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="service-button">
+
+                        Ver cursos ↗
+
+                    </a>
+
+                </article>
+
+
+                <!-- TRANSITO -->
+
+                <article class="service-card featured"
+                    data-category="transito">
+
+                    <div class="service-icon">
+                        🚗
+                    </div>
+
+                    <span class="featured-label">
+                        ⭐ Destaque
+                    </span>
+
+                    <h3>Carteira Digital de Trânsito</h3>
+
+                    <p>
+                        Acesse documentos digitais de trânsito.
+                    </p>
+
+                    <a
+                        href="https://www.gov.br/pt-br/servicos/obter-carteira-digital-de-transito"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="service-button">
+
+                        Acessar serviço ↗
+
+                    </a>
+
+                </article>
+
+
+                <!-- SENATRAN -->
+
+                <article class="service-card"
+                    data-category="transito">
+
+                    <div class="service-icon">
+                        🛣️
+                    </div>
+
+                    <h3>Senatran</h3>
+
+                    <p>
+                        Serviços e informações nacionais de trânsito.
+                    </p>
+
+                    <a
+                        href="https://www.gov.br/transportes/pt-br/assuntos/transito/senatran"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="service-button">
+
+                        Acessar serviço ↗
+
+                    </a>
+
+                </article>
+
+
+                <!-- CADASTRO ÚNICO -->
+
+                <article class="service-card"
+                    data-category="cidadania">
+
+                    <div class="service-icon">
+                        🏠
+                    </div>
+
+                    <h3>Cadastro Único</h3>
+
+                    <p>
+                        Informações sobre Cadastro Único e programas sociais.
+                    </p>
+
+                    <a
+                        href="https://www.gov.br/mds/pt-br/acoes-e-programas/cadastro-unico"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="service-button">
+
+                        Acessar serviço ↗
+
+                    </a>
+
+                </article>
+
+
+                <!-- BOLSA FAMILIA -->
+
+                <article class="service-card"
+                    data-category="cidadania">
+
+                    <div class="service-icon">
+                        👨‍👩‍👧
+                    </div>
+
+                    <h3>Bolsa Família</h3>
+
+                    <p>
+                        Informações oficiais sobre o programa e seus serviços.
+                    </p>
+
+                    <a
+                        href="https://www.gov.br/mds/pt-br/acoes-e-programas/bolsa-familia"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="service-button">
+
+                        Conhecer ↗
+
+                    </a>
+
+                </article>
+
+
+                <!-- CONSUMIDOR -->
+
+                <article class="service-card"
+                    data-category="cidadania">
+
+                    <div class="service-icon">
+                        🛒
+                    </div>
+
+                    <h3>Consumidor.gov.br</h3>
+
+                    <p>
+                        Registre reclamações e busque soluções com empresas.
+                    </p>
+
+                    <a
+                        href="https://www.consumidor.gov.br/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="service-button">
+
+                        Acessar serviço ↗
+
+                    </a>
+
+                </article>
+
+
+                <!-- FALA BR -->
+
+                <article class="service-card"
+                    data-category="cidadania">
+
+                    <div class="service-icon">
+                        📢
+                    </div>
+
+                    <h3>Fala.BR</h3>
+
+                    <p>
+                        Canal para manifestações e acesso à informação.
+                    </p>
+
+                    <a
+                        href="https://falabr.cgu.gov.br/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="service-button">
+
+                        Acessar serviço ↗
+
+                    </a>
+
+                </article>
+
+
+                <!-- JUSTIÇA ELEITORAL -->
+
+                <article class="service-card"
+                    data-category="cidadania">
+
+                    <div class="service-icon">
+                        🗳️
+                    </div>
+
+                    <h3>Justiça Eleitoral</h3>
+
+                    <p>
+                        Serviços e informações para eleitores.
+                    </p>
+
+                    <a
+                        href="https://www.tse.jus.br/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="service-button">
+
+                        Acessar serviço ↗
+
+                    </a>
+
+                </article>
+
+
+                <!-- PASSAPORTE -->
+
+                <article class="service-card"
+                    data-category="governo">
+
+                    <div class="service-icon">
+                        ✈️
+                    </div>
+
+                    <h3>Passaporte</h3>
+
+                    <p>
+                        Informações oficiais para solicitar e acompanhar passaporte.
+                    </p>
+
+                    <a
+                        href="https://www.gov.br/pf/pt-br/assuntos/passaporte"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="service-button">
+
+                        Acessar serviço ↗
+
+                    </a>
+
+                </article>
+
+
+                <!-- VALORES A RECEBER -->
+
+                <article class="service-card"
+                    data-category="financas">
+
+                    <div class="service-icon">
+                        💵
+                    </div>
+
+                    <h3>Valores a Receber</h3>
+
+                    <p>
+                        Consulte informações do Banco Central sobre valores a receber.
+                    </p>
+
+                    <a
+                        href="https://www.bcb.gov.br/meubc/valores-a-receber"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="service-button">
+
+                        Consultar ↗
+
+                    </a>
+
+                </article>
+
+
+                <!-- CELULAR SEGURO -->
+
+                <article class="service-card"
+                    data-category="governo">
+
+                    <div class="service-icon">
+                        📱
+                    </div>
+
+                    <h3>Celular Seguro</h3>
+
+                    <p>
+                        Serviço oficial para proteção do celular em caso de roubo ou furto.
+                    </p>
+
+                    <a
+                        href="https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/celular-seguro"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="service-button">
+
+                        Acessar serviço ↗
+
+                    </a>
+
+                </article>
+
+
+            </div>
+
+
+            <div id="noResults" class="no-results">
+
+                <div>
+                    🔎
+                </div>
+
+                <h3>Nenhum serviço encontrado</h3>
+
+                <p>
+                    Tente pesquisar outro termo ou escolher outra categoria.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SEGURANÇA ================= -->
+
+        <section id="seguranca" class="security-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-icon">
+                        🔐
+                    </span>
+
+                    <div>
+
+                        <h2>Segurança digital</h2>
+
+                        <p>
+                            Pequenos cuidados podem evitar grandes problemas.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="security-grid">
+
+
+                    <div class="security-card">
+
+                        <span>🔑</span>
+
+                        <h3>Use senhas fortes</h3>
+
+                        <p>
+                            Evite senhas fáceis de descobrir e não utilize
+                            a mesma senha em todos os serviços.
+                        </p>
+
+                    </div>
+
+
+                    <div class="security-card">
+
+                        <span>⚠️</span>
+
+                        <h3>Desconfie de links</h3>
+
+                        <p>
+                            Antes de clicar, verifique quem enviou e confira
+                            o endereço do site.
+                        </p>
+
+                    </div>
+
+
+                    <div class="security-card">
+
+                        <span>📲</span>
+
+                        <h3>Não compartilhe códigos</h3>
+
+                        <p>
+                            Nunca informe códigos recebidos por SMS ou
+                            aplicativos para desconhecidos.
+                        </p>
+
+                    </div>
+
+
+                    <div class="security-card">
+
+                        <span>💳</span>
+
+                        <h3>Proteja seus dados bancários</h3>
+
+                        <p>
+                            Bancos não precisam que você informe sua senha
+                            ou código de segurança para desconhecidos.
+                        </p>
+
+                    </div>
+
+
+                    <div class="security-card">
+
+                        <span>🎁</span>
+
+                        <h3>Cuidado com prêmios</h3>
+
+                        <p>
+                            Desconfie de mensagens informando que você ganhou
+                            um prêmio inesperado.
+                        </p>
+
+                    </div>
+
+
+                    <div class="security-card">
+
+                        <span>🛡️</span>
+
+                        <h3>Atualize seus dispositivos</h3>
+
+                        <p>
+                            Mantenha o celular, computador e aplicativos
+                            atualizados.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="security-resource">
+
+                    <p>
+                        📚 Aprenda mais sobre segurança na internet:
+                    </p>
+
+                    <a
+                        href="https://www.cert.br/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="primary-button">
+
+                        Acessar CERT.br ↗
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ACESSIBILIDADE ================= -->
+
+        <section id="acessibilidade" class="accessibility-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-icon">
+                        ♿
+                    </span>
+
+                    <div>
+
+                        <h2>Acessibilidade digital</h2>
+
+                        <p>
+                            Recursos para tornar a tecnologia mais acessível.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="accessibility-grid">
+
+
+                    <div class="access-card">
+
+                        <span>🔠</span>
+
+                        <h3>Texto maior</h3>
+
+                        <p>
+                            Utilize o botão A+ no topo do site para aumentar
+                            o tamanho das letras.
+                        </p>
+
+                    </div>
+
+
+                    <div class="access-card">
+
+                        <span>◐</span>
+
+                        <h3>Alto contraste</h3>
+
+                        <p>
+                            O botão de contraste altera as cores para
+                            facilitar a visualização.
+                        </p>
+
+                    </div>
+
+
+                    <div class="access-card">
+
+                        <span>🔊</span>
+
+                        <h3>Leitor de tela</h3>
+
+                        <p>
+                            O site possui estrutura semântica para facilitar
+                            o uso de leitores de tela.
+                        </p>
+
+                    </div>
+
+
+                    <div class="access-card">
+
+                        <span>📱</span>
+
+                        <h3>Celular</h3>
+
+                        <p>
+                            O layout se adapta a celulares, tablets e computadores.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= TELEFONES ================= -->
+
+        <section class="emergency-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-icon">
+                        🆘
+                    </span>
+
+                    <div>
+
+                        <h2>Telefones importantes</h2>
+
+                        <p>
+                            Números de emergência e atendimento.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="phone-grid">
+
+                    <div class="phone-card">
+                        <strong>190</strong>
+                        <span>Polícia Militar</span>
+                    </div>
+
+                    <div class="phone-card">
+                        <strong>192</strong>
+                        <span>SAMU</span>
+                    </div>
+
+                    <div class="phone-card">
+                        <strong>193</strong>
+                        <span>Corpo de Bombeiros</span>
+                    </div>
+
+                    <div class="phone-card">
+                        <strong>199</strong>
+                        <span>Defesa Civil</span>
+                    </div>
+
+                    <div class="phone-card">
+                        <strong>100</strong>
+                        <span>Direitos Humanos</span>
+                    </div>
+
+                    <div class="phone-card">
+                        <strong>180</strong>
+                        <span>Atendimento à Mulher</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= AVALIAÇÃO ================= -->
+
+        <section id="avaliacao" class="evaluation-section">
+
+            <div class="container evaluation">
+
+                <div>
+
+                    <span class="section-icon">
+                        📝
+                    </span>
+
+                    <h2>
+                        Avalie o Guia Digital
+                    </h2>
+
+                    <p>
+                        Sua opinião ajuda a identificar melhorias e avaliar
+                        se o projeto foi útil para a comunidade.
+                    </p>
+
+                </div>
+
+
+                <!-- TROQUE O LINK ABAIXO PELO LINK DO SEU GOOGLE FORMS -->
+
+                <a
+                    href="https://forms.google.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="evaluation-button">
+
+                    📝 Responder avaliação
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SOBRE ================= -->
+
+        <section class="about-section">
+
+            <div class="container">
+
+                <h2>📌 Sobre este projeto</h2>
+
+                <p>
+                    O Guia Digital foi desenvolvido como parte de um projeto
+                    de extensão do curso de Gestão da Tecnologia da Informação.
+                </p>
+
+                <p>
+                    A proposta é utilizar a tecnologia para promover inclusão
+                    digital, facilitar o acesso a informações e serviços e
+                    contribuir para a autonomia e cidadania da comunidade.
+                </p>
+
+                <p>
+                    O site não substitui os órgãos responsáveis pelos serviços.
+                    Os links apresentados direcionam o usuário para páginas
+                    externas e oficiais.
+                </p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="container footer-content">
+
+            <div>
+
+                <h2>💻 Guia Digital</h2>
+
+                <p>
+                    Inclusão digital • Cidadania • Segurança
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <p>
+                    Projeto de Extensão
+                </p>
+
+                <p>
+                    Gestão da Tecnologia da Informação
+                </p>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    Desenvolvido para fins acadêmicos e sociais.
+                </p>
+
+            </div>
 
         </div>
 
+    </footer>
 
-        <div class="security-card">
 
-            <span>🎁</span>
+    <!-- ================= VOLTAR AO TOPO ================= -->
 
-            <h3>Desconfie de prêmios</h3>
+    <button
+        id="topButton"
+        class="top-button"
+        aria-label="Voltar ao topo">
 
-            <p>
-                Ofertas muito vantajosas ou prêmios inesperados
-                podem ser tentativas de golpe.
-            </p>
+        ↑
 
-        </div>
+    </button>
 
 
-    </div>
-
-
-    <div class="security-link">
-
-        <p>
-            🔎 Quer aprender mais sobre segurança?
-        </p>
-
-        <a
-            href="https://www.cert.br/"
-            target="_blank"
-            rel="noopener"
-            class="button">
-
-            Acessar CERT.br
-
-        </a>
-
-    </div>
-
-</section>
-
-
-<!-- ================= ACESSIBILIDADE ================= -->
-
-<section id="acessibilidade" class="accessibility-section">
-
-    <div class="section-title">
-
-        <span>♿</span>
-
-        <div>
-
-            <h2>Acessibilidade digital</h2>
-
-            <p>
-                Recursos que podem facilitar o uso da tecnologia.
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <div class="accessibility-grid">
-
-
-        <div>
-
-            <h3>🔠 Texto maior</h3>
-
-            <p>
-                Aumente o tamanho da fonte nas configurações
-                do celular ou computador.
-            </p>
-
-        </div>
-
-
-        <div>
-
-            <h3>🔊 Leitor de tela</h3>
-
-            <p>
-                Utilize recursos que transformam textos
-                da tela em áudio.
-            </p>
-
-        </div>
-
-
-        <div>
-
-            <h3>🎤 Comando de voz</h3>
-
-            <p>
-                Utilize a voz para realizar determinadas
-                tarefas no aparelho.
-            </p>
-
-        </div>
-
-
-        <div>
-
-            <h3>🎨 Contraste</h3>
-
-            <p>
-                Ajuste cores e contraste para facilitar
-                a visualização.
-            </p>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-<!-- ================= TELEFONES ================= -->
-
-<section class="emergency-section">
-
-    <div class="section-title">
-
-        <span>📞</span>
-
-        <div>
-
-            <h2>Telefones importantes</h2>
-
-            <p>
-                Números de emergência e atendimento.
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <div class="phone-grid">
-
-
-        <div>
-            <strong>190</strong>
-            <span>Polícia Militar</span>
-        </div>
-
-
-        <div>
-            <strong>192</strong>
-            <span>SAMU</span>
-        </div>
-
-
-        <div>
-            <strong>193</strong>
-            <span>Corpo de Bombeiros</span>
-        </div>
-
-
-        <div>
-            <strong>199</strong>
-            <span>Defesa Civil</span>
-        </div>
-
-
-        <div>
-            <strong>100</strong>
-            <span>Direitos Humanos</span>
-        </div>
-
-
-        <div>
-            <strong>180</strong>
-            <span>Atendimento à Mulher</span>
-        </div>
-
-
-    </div>
-
-</section>
-
-
-<!-- ================= AVALIAÇÃO ================= -->
-
-<section id="avaliacao" class="evaluation-section">
-
-    <div class="section-title">
-
-        <span>📝</span>
-
-        <div>
-
-            <h2>Avalie o Guia Digital</h2>
-
-            <p>
-                Sua opinião ajuda a melhorar este projeto.
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <p>
-        Após utilizar o guia, responda ao formulário de avaliação.
-        Sua participação ajudará a verificar se o projeto foi útil
-        para a comunidade.
-    </p>
-
-
-    <!-- SUBSTITUA O LINK ABAIXO PELO SEU GOOGLE FORMS -->
-
-    <a
-        href="https://forms.google.com/"
-        target="_blank"
-        rel="noopener"
-        class="button button-large">
-
-        📝 Responder avaliação
-
-    </a>
-
-</section>
-
-
-<!-- ================= SOBRE ================= -->
-
-<section class="about-section">
-
-    <h2>📌 Sobre o projeto</h2>
-
-    <p>
-        O Guia Digital foi desenvolvido como parte de um projeto
-        de extensão do curso de Gestão da Tecnologia da Informação.
-    </p>
-
-    <p>
-        O projeto busca utilizar a tecnologia para promover inclusão
-        digital, facilitar o acesso a serviços e informações e
-        contribuir para a autonomia e cidadania da comunidade.
-    </p>
-
-    <p>
-        As informações apresentadas direcionam o usuário para
-        páginas oficiais. Recomenda-se sempre verificar o endereço
-        eletrônico antes de fornecer informações pessoais.
-    </p>
-
-</section>
-
-
-</main>
-
-
-<!-- ================= RODAPÉ ================= -->
-
-<footer>
-
-    <div class="container">
-
-        <h3>💻 Guia Digital</h3>
-
-        <p>
-            Projeto de Extensão – Gestão da Tecnologia da Informação
-        </p>
-
-        <p>
-            Inclusão digital • Cidadania • Segurança
-        </p>
-
-        <p class="footer-small">
-            Desenvolvido para fins acadêmicos e sociais.
-        </p>
-
-    </div>
-
-</footer>
-
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
