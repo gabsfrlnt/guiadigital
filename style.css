@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #263238;
+    line-height: 1.6;
+}
+
+
+/* CONTAINER */
+
+.container {
+    width: 92%;
+    max-width: 1050px;
+    margin: auto;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    background: linear-gradient(135deg, #0d47a1, #1976d2);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+
+.icone-header {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 8px;
+}
+
+
+header p {
+    font-size: 20px;
+}
+
+
+/* CONTEÚDO */
+
+main {
+    padding: 35px 0;
+}
+
+
+section {
+    background: white;
+    margin-bottom: 25px;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+section h2 {
+    color: #0d47a1;
+    margin-bottom: 20px;
+}
+
+
+/* INTRODUÇÃO */
+
+.introducao {
+    border-left: 6px solid #1976d2;
+}
+
+
+.introducao p {
+    margin-bottom: 10px;
+}
+
+
+/* PASSOS */
+
+.passos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+.passo {
+    background: #e3f2fd;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.passo span {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 10px;
+    padding-top: 7px;
+    border-radius: 50%;
+    background: #1976d2;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/* CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+
+.card {
+    background: #f8fbff;
+    border: 1px solid #d9e9f7;
+    border-radius: 12px;
+    padding: 24px;
+    transition: 0.2s;
+}
+
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.card-icon {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+
+.card h3 {
+    color: #1565c0;
+    margin-bottom: 10px;
+}
+
+
+.card p {
+    margin-bottom: 20px;
+}
+
+
+/* BOTÕES */
+
+.button {
+    display: inline-block;
+    background: #1565c0;
+    color: white;
+    text-decoration: none;
+    padding: 11px 18px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+
+.button:hover {
+    background: #0d47a1;
+}
+
+
+/* SEGURANÇA */
+
+.seguranca {
+    border-top: 5px solid #fb8c00;
+}
+
+
+.seguranca h2 {
+    color: #e65100;
+}
+
+
+.texto-seguranca {
+    margin-bottom: 20px;
+}
+
+
+.dicas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+
+.dica {
+    background: #fff8e1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.dica span {
+    font-size: 28px;
+}
+
+
+.dica h3 {
+    color: #e65100;
+    margin: 8px 0;
+}
+
+
+/* DICAS CELULAR */
+
+.dicas-celular {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+.dicas-celular div {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.dicas-celular h3 {
+    color: #455a64;
+    margin-bottom: 10px;
+}
+
+
+/* ACESSIBILIDADE */
+
+.acessibilidade {
+    background: #f3e5f5;
+    border-left: 6px solid #8e24aa;
+}
+
+
+.acessibilidade h2 {
+    color: #6a1b9a;
+}
+
+
+.acessibilidade ul {
+    margin-top: 15px;
+    padding-left: 25px;
+}
+
+
+.acessibilidade li {
+    margin-bottom: 8px;
+}
+
+
+/* DESTAQUE */
+
+.destaque {
+    background: #e8f5e9;
+    border-left: 6px solid #43a047;
+}
+
+
+.destaque h2 {
+    color: #2e7d32;
+}
+
+
+/* SOBRE */
+
+.sobre {
+    background: #eceff1;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background: #263238;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+
+footer p {
+    margin: 5px;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+
+    header p {
+        font-size: 17px;
+    }
+
+
+    section {
+        padding: 22px;
+    }
+
+
+    .passos {
+        grid-template-columns: 1fr;
+    }
+
+
+    .dicas {
+        grid-template-columns: 1fr;
+    }
+
+
+    .dicas-celular {
+        grid-template-columns: 1fr;
+    }
+
+
+    .container {
+        width: 94%;
+    }
+
+}
