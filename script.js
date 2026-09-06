@@ -122,7 +122,7 @@ filterButtons.forEach(button => {
 });
 
 
-/* ================= AUMENTAR FONTE ================= */
+/* ================= TAMANHO DA FONTE ================= */
 
 const increaseFont =
     document.getElementById("increaseFont");
@@ -134,23 +134,44 @@ const resetFont =
     document.getElementById("resetFont");
 
 
+// Tamanho inicial da fonte
+let fontSize = 16;
+
+
+// Aumentar fonte
 increaseFont.addEventListener("click", function () {
 
-    document.body.classList.add("large-font");
+    if (fontSize < 26) {
+
+        fontSize += 2;
+
+        document.body.style.fontSize = fontSize + "px";
+
+    }
 
 });
 
 
+// Diminuir fonte
 decreaseFont.addEventListener("click", function () {
 
-    document.body.classList.remove("large-font");
+    if (fontSize > 12) {
+
+        fontSize -= 2;
+
+        document.body.style.fontSize = fontSize + "px";
+
+    }
 
 });
 
 
+// Restaurar tamanho original
 resetFont.addEventListener("click", function () {
 
-    document.body.classList.remove("large-font");
+    fontSize = 16;
+
+    document.body.style.fontSize = fontSize + "px";
 
 });
 
