@@ -5,6 +5,11 @@
 }
 
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: #f4f7fb;
@@ -13,43 +18,77 @@ body {
 }
 
 
-/* CONTAINER */
-
 .container {
     width: 92%;
-    max-width: 1050px;
+    max-width: 1150px;
     margin: auto;
 }
 
 
-/* CABEÇALHO */
+/* ================= HEADER ================= */
 
-header {
+.header {
     background: linear-gradient(135deg, #0d47a1, #1976d2);
     color: white;
-    text-align: center;
-    padding: 50px 20px;
+    padding: 45px 0;
 }
 
 
-.icone-header {
-    font-size: 45px;
-    margin-bottom: 10px;
+.header-content {
+    display: flex;
+    align-items: center;
 }
 
 
-header h1 {
+.logo-icon {
     font-size: 42px;
-    margin-bottom: 8px;
 }
 
 
-header p {
-    font-size: 20px;
+.header h1 {
+    font-size: 42px;
+    margin: 5px 0;
 }
 
 
-/* CONTEÚDO */
+.header p {
+    font-size: 19px;
+}
+
+
+/* ================= MENU ================= */
+
+.menu {
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+.menu-content {
+    display: flex;
+    gap: 28px;
+    padding: 14px 0;
+    overflow-x: auto;
+}
+
+
+.menu a {
+    color: #0d47a1;
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+
+.menu a:hover {
+    color: #1976d2;
+}
+
+
+/* ================= SEÇÕES ================= */
 
 main {
     padding: 35px 0;
@@ -59,62 +98,128 @@ main {
 section {
     background: white;
     margin-bottom: 25px;
-    padding: 30px;
-    border-radius: 14px;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    padding: 32px;
+    border-radius: 15px;
+    box-shadow: 0 3px 14px rgba(0,0,0,.07);
 }
 
 
 section h2 {
     color: #0d47a1;
-    margin-bottom: 20px;
-}
-
-
-/* INTRODUÇÃO */
-
-.introducao {
-    border-left: 6px solid #1976d2;
-}
-
-
-.introducao p {
     margin-bottom: 10px;
 }
 
 
-/* PASSOS */
+/* ================= HERO ================= */
 
-.passos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #e3f2fd, #ffffff);
+    min-height: 300px;
 }
 
 
-.passo {
-    background: #e3f2fd;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
+.hero-text {
+    max-width: 720px;
 }
 
 
-.passo span {
-    display: block;
-    width: 40px;
-    height: 40px;
-    margin: 0 auto 10px;
-    padding-top: 7px;
-    border-radius: 50%;
+.tag {
+    display: inline-block;
     background: #1976d2;
     color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
     font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+.hero h2 {
+    font-size: 35px;
+}
+
+
+.hero p {
+    margin-top: 12px;
+}
+
+
+.hero-icon {
+    font-size: 100px;
+    padding: 20px;
+}
+
+
+/* ================= AVISO ================= */
+
+.notice {
+    background: #fff8e1;
+    border-left: 6px solid #ff9800;
+}
+
+
+.notice strong {
+    color: #e65100;
     font-size: 18px;
 }
 
 
-/* CARDS */
+.notice p {
+    margin-top: 8px;
+}
+
+
+/* ================= BUSCA ================= */
+
+.search-section {
+    text-align: center;
+}
+
+
+.search-section input {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 18px;
+    padding: 17px 20px;
+    border: 2px solid #d5e3ef;
+    border-radius: 10px;
+    font-size: 17px;
+    outline: none;
+}
+
+
+.search-section input:focus {
+    border-color: #1976d2;
+}
+
+
+.no-results {
+    display: none;
+    margin-top: 15px;
+    color: #c62828;
+}
+
+
+/* ================= TÍTULO ================= */
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+
+.section-title > span {
+    font-size: 38px;
+}
+
+
+/* ================= CARDS ================= */
 
 .cards {
     display: grid;
@@ -124,22 +229,22 @@ section h2 {
 
 
 .card {
-    background: #f8fbff;
-    border: 1px solid #d9e9f7;
+    border: 1px solid #dce8f1;
     border-radius: 12px;
-    padding: 24px;
-    transition: 0.2s;
+    padding: 23px;
+    background: #fafdff;
+    transition: .2s;
 }
 
 
 .card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+    box-shadow: 0 7px 18px rgba(0,0,0,.10);
 }
 
 
 .card-icon {
-    font-size: 35px;
+    font-size: 38px;
     margin-bottom: 10px;
 }
 
@@ -151,20 +256,22 @@ section h2 {
 
 
 .card p {
-    margin-bottom: 20px;
+    min-height: 75px;
+    margin-bottom: 18px;
 }
 
 
-/* BOTÕES */
+/* ================= BOTÕES ================= */
 
 .button {
     display: inline-block;
     background: #1565c0;
     color: white;
     text-decoration: none;
-    padding: 11px 18px;
+    padding: 11px 17px;
     border-radius: 7px;
     font-weight: bold;
+    transition: .2s;
 }
 
 
@@ -173,140 +280,187 @@ section h2 {
 }
 
 
-/* SEGURANÇA */
-
-.seguranca {
-    border-top: 5px solid #fb8c00;
+.button-large {
+    margin-top: 20px;
+    padding: 14px 25px;
+    font-size: 17px;
 }
 
 
-.seguranca h2 {
-    color: #e65100;
+/* ================= SEGURANÇA ================= */
+
+.security-section {
+    border-top: 6px solid #fb8c00;
 }
 
 
-.texto-seguranca {
-    margin-bottom: 20px;
-}
-
-
-.dicas {
+.security-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 18px;
 }
 
 
-.dica {
+.security-card {
     background: #fff8e1;
-    padding: 20px;
+    padding: 22px;
     border-radius: 10px;
 }
 
 
-.dica span {
-    font-size: 28px;
+.security-card > span {
+    font-size: 32px;
 }
 
 
-.dica h3 {
+.security-card h3 {
     color: #e65100;
-    margin: 8px 0;
+    margin: 7px 0;
 }
 
 
-/* DICAS CELULAR */
-
-.dicas-celular {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+.security-link {
+    margin-top: 25px;
 }
 
 
-.dicas-celular div {
-    background: #f5f5f5;
-    padding: 20px;
-    border-radius: 10px;
-}
+/* ================= ACESSIBILIDADE ================= */
 
-
-.dicas-celular h3 {
-    color: #455a64;
-    margin-bottom: 10px;
-}
-
-
-/* ACESSIBILIDADE */
-
-.acessibilidade {
+.accessibility-section {
     background: #f3e5f5;
     border-left: 6px solid #8e24aa;
 }
 
 
-.acessibilidade h2 {
+.accessibility-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+.accessibility-grid div {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.accessibility-grid h3 {
     color: #6a1b9a;
-}
-
-
-.acessibilidade ul {
-    margin-top: 15px;
-    padding-left: 25px;
-}
-
-
-.acessibilidade li {
     margin-bottom: 8px;
 }
 
 
-/* DESTAQUE */
+/* ================= TELEFONES ================= */
 
-.destaque {
+.emergency-section {
+    border-top: 6px solid #c62828;
+}
+
+
+.phone-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+
+.phone-grid div {
+    background: #ffebee;
+    padding: 18px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.phone-grid strong {
+    display: block;
+    font-size: 27px;
+    color: #c62828;
+}
+
+
+.phone-grid span {
+    display: block;
+}
+
+
+/* ================= AVALIAÇÃO ================= */
+
+.evaluation-section {
     background: #e8f5e9;
     border-left: 6px solid #43a047;
 }
 
 
-.destaque h2 {
+.evaluation-section h2 {
     color: #2e7d32;
 }
 
 
-/* SOBRE */
+/* ================= SOBRE ================= */
 
-.sobre {
+.about-section {
     background: #eceff1;
 }
 
 
-/* RODAPÉ */
+/* ================= FOOTER ================= */
 
 footer {
     background: #263238;
     color: white;
+    padding: 35px 0;
     text-align: center;
-    padding: 30px 20px;
 }
 
 
-footer p {
-    margin: 5px;
+footer h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
 }
 
 
-/* RESPONSIVIDADE */
+.footer-small {
+    margin-top: 12px;
+    color: #b0bec5;
+    font-size: 14px;
+}
 
-@media (max-width: 700px) {
 
-    header h1 {
+/* ================= CELULAR ================= */
+
+@media (max-width: 750px) {
+
+    .header {
+        padding: 35px 0;
+    }
+
+
+    .header h1 {
         font-size: 32px;
     }
 
 
-    header p {
-        font-size: 17px;
+    .header p {
+        font-size: 16px;
+    }
+
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+
+    .hero-icon {
+        font-size: 65px;
     }
 
 
@@ -315,23 +469,23 @@ footer p {
     }
 
 
-    .passos {
+    .security-grid {
         grid-template-columns: 1fr;
     }
 
 
-    .dicas {
+    .accessibility-grid {
         grid-template-columns: 1fr;
     }
 
 
-    .dicas-celular {
-        grid-template-columns: 1fr;
+    .phone-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
 
-    .container {
-        width: 94%;
+    .section-title {
+        align-items: flex-start;
     }
 
 }
