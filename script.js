@@ -1,19 +1,4 @@
-/* =====================================================
-   GUIA DIGITAL
-   Funcionalidades:
-   - Pesquisa de serviços
-   - Filtros por categoria
-   - Aumento progressivo da fonte
-   - Redução progressiva da fonte
-   - Memorização do tamanho da fonte
-   - Alto contraste
-   - Botão voltar ao topo
-===================================================== */
-
-
-/* =====================================================
-   PESQUISA DE SERVIÇOS
-===================================================== */
+/*PESQUISA DE SERVIÇOS */
 
 const searchInput = document.getElementById("searchInput");
 
@@ -22,7 +7,7 @@ const serviceCards = document.querySelectorAll(".service-card");
 const noResults = document.getElementById("noResults");
 
 
-/* Remove acentos e transforma o texto em minúsculas */
+/*Remove acentos e transforma o texto em minúsculas*/
 
 function normalizeText(text) {
 
@@ -111,9 +96,7 @@ searchInput.addEventListener(
 
 
 
-/* =====================================================
-   FILTROS POR CATEGORIA
-===================================================== */
+/* FILTROS POR CATEGORIA*/
 
 const filterButtons =
     document.querySelectorAll(".filter-button");
@@ -148,9 +131,7 @@ filterButtons.forEach(button => {
 
 
 
-/* =====================================================
-   ACESSIBILIDADE - TAMANHO DA FONTE
-===================================================== */
+/*ACESSIBILIDADE - TAMANHO DA FONTE*/
 
 const increaseFont =
     document.getElementById("increaseFont");
@@ -163,18 +144,6 @@ const decreaseFont =
 const resetFont =
     document.getElementById("resetFont");
 
-
-/*
-   Tamanho padrão:
-   16px
-
-   Tamanho mínimo:
-   12px
-
-   Tamanho máximo:
-   26px
-*/
-
 const defaultFontSize = 16;
 
 const minimumFontSize = 12;
@@ -182,12 +151,7 @@ const minimumFontSize = 12;
 const maximumFontSize = 26;
 
 
-/*
-   Recupera o tamanho salvo anteriormente.
-
-   Se não existir nenhum tamanho salvo,
-   utiliza 16px.
-*/
+/* Recupera o tamanho salvo anteriormente.Se não existir nenhum tamanho salvo,utiliza 16px.*/
 
 let savedFontSize =
     localStorage.getItem("guiaDigitalFontSize");
@@ -235,9 +199,7 @@ applyFontSize();
 
 
 
-/* =====================================================
-   BOTÃO A+ - AUMENTAR FONTE
-===================================================== */
+/*  BOTÃO A+ - AUMENTAR FONTE */
 
 increaseFont.addEventListener("click", function () {
 
@@ -262,9 +224,7 @@ increaseFont.addEventListener("click", function () {
 
 
 
-/* =====================================================
-   BOTÃO A- - DIMINUIR FONTE
-===================================================== */
+/* BOTÃO A- - DIMINUIR FONTE */
 
 decreaseFont.addEventListener("click", function () {
 
@@ -289,9 +249,7 @@ decreaseFont.addEventListener("click", function () {
 
 
 
-/* =====================================================
-   BOTÃO A - RESTAURAR FONTE
-===================================================== */
+/* BOTÃO A - RESTAURAR FONTE */
 
 resetFont.addEventListener("click", function () {
 
@@ -303,26 +261,20 @@ resetFont.addEventListener("click", function () {
 
 
 
-/* =====================================================
-   ALTO CONTRASTE
-===================================================== */
+/* ALTO CONTRASTE*/
 
 const contrastButton =
     document.getElementById("contrastButton");
 
 
-/*
-   Recupera a preferência de contraste
-*/
+/*  Recupera a preferência de contraste*/
 
 const savedContrast =
     localStorage.getItem("guiaDigitalHighContrast");
 
 
-/*
-   Se o usuário já havia ativado o contraste,
-   ativa automaticamente.
-*/
+/* Se o usuário já havia ativado o contraste,
+   ativa automaticamente.*/
 
 if (savedContrast === "true") {
 
@@ -341,9 +293,7 @@ contrastButton.addEventListener("click", function () {
     );
 
 
-    /*
-       Salva a preferência do usuário
-    */
+    /* Salva a preferência do usuário*/
 
     const contrastEnabled =
         document.body.classList.contains(
@@ -360,18 +310,13 @@ contrastButton.addEventListener("click", function () {
 
 
 
-/* =====================================================
-   BOTÃO VOLTAR AO TOPO
-===================================================== */
+/* BOTÃO VOLTAR AO TOPO= */
 
 const topButton =
     document.getElementById("topButton");
 
 
-/*
-   Mostra o botão quando o usuário
-   desce mais de 400px.
-*/
+/* Mostra o botão quando o usuário desce mais de 400px.*/
 
 window.addEventListener("scroll", function () {
 
@@ -389,9 +334,7 @@ window.addEventListener("scroll", function () {
 });
 
 
-/*
-   Ao clicar, volta suavemente para o topo.
-*/
+/* Ao clicar, volta suavemente para o topo.*/
 
 topButton.addEventListener("click", function () {
 
@@ -407,16 +350,9 @@ topButton.addEventListener("click", function () {
 
 
 
-/* =====================================================
-   REGISTRO DOS SERVIÇOS ACESSADOS
-===================================================== */
+/* REGISTRO DOS SERVIÇOS ACESSADOS */
 
-/*
-   Esta função apenas registra no console
-   qual serviço foi clicado.
-
-   Não coleta dados pessoais do usuário.
-*/
+/* Esta função apenas registra no console qual serviço foi clicado. Não coleta dados pessoais do usuário.*/
 
 document
     .querySelectorAll(".service-button")
@@ -446,14 +382,9 @@ document
 
 
 
-/* =====================================================
-   INICIALIZAÇÃO
-===================================================== */
+/* INICIALIZAÇÃO= */
 
-/*
-   Garante que os serviços apareçam
-   corretamente quando o site for aberto.
-*/
+/* Garante que os serviços apareçam corretamente quando o site for aberto.*/
 
 filterServices();
 
